@@ -25,5 +25,10 @@ This tool automates the complex scoring logic of the Greek Rural Development Pro
 ## 📂 Project Structure
 - `page_1.php` to `page_5.php`: The 5-stage application wizard.
 - `proccess.php`: The core calculation engine.
+
+## Development Context & Evolution
+This project was developed using **Procedural PHP**, which was the standard approach at the time of its creation to meet urgent public service needs. 
+
+Since then, I have transitioned to **Object-Oriented Programming (OOP)** and modern software architecture patterns. I keep this project in its original form as a testament to its real-world impact and my journey in software development.
 - `fun_katoikia.js`: JavaScript logic for dynamic location selection.
 - `connect_db.php`: Database connection (credentials omitted).
