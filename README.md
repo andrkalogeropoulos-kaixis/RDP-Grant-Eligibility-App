@@ -30,5 +30,12 @@ This tool automates the complex scoring logic of the Greek Rural Development Pro
 This project was developed using **Procedural PHP**, which was the standard approach at the time of its creation to meet urgent public service needs. 
 
 Since then, I have transitioned to **Object-Oriented Programming (OOP)** and modern software architecture patterns. I keep this project in its original form as a testament to its real-world impact and my journey in software development.
+
+## 🚀 Getting Started
+To run this application locally:
+1. Clone the repository.
+2. Import the `points_paa.sql` file (found in the `/database` folder) into your MySQL server.
+3. Configure your database credentials in `connect_db.php`.
+4. Run it using a local server environment like XAMPP or WAMP.
 - `fun_katoikia.js`: JavaScript logic for dynamic location selection.
 - `connect_db.php`: Database connection (credentials omitted).
