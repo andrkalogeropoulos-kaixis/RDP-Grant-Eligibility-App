@@ -1,30 +1,29 @@
 # Rural Development Programme (RDP) Score Calculator
 
-This web application was developed during my tenure at the **Region of Attica** to assist potential beneficiaries of the **Rural Development Programme of Greece**.
+An interactive web application developed for the **Region of Attica** to help farmers calculate their eligibility score for EU-funded agricultural grants.
 
-## 💡 Project Overview
-The application automates the eligibility scoring process for agricultural grants, specifically for:
-* **Sub-measure 6.1:** Start-up aid for young farmers.
-* **Sub-measure 4.1:** Support for investments in agricultural holdings (Improvement Plans).
+## 💡 Overview
+This tool automates the complex scoring logic of the Greek Rural Development Programme, specifically for Young Farmers (Sub-measure 6.1) and Investment Plans (Sub-measure 4.1).
 
-### Real-World Impact
-The tool was hosted on the official website of the Region of Attica, providing transparency and immediate feedback to hundreds of applicants and consultants.
+### Key Impact
+* **Official Use:** Successfully deployed on the official website of the Region of Attica.
+* **Citizen Service:** Provided a user-friendly way for applicants to estimate their score based on official FEK (Government Gazette) criteria.
 
-## 🛠 Technical Analysis
-The project is built with **Procedural PHP**, **MySQL**, and **JavaScript**.
+## 🛠 Technical Stack
+* **Backend:** PHP (Procedural) using **PHP Sessions** for multi-page state management.
+* **Frontend:** HTML5, CSS3, and **JavaScript (jQuery/AJAX)** for dynamic form behavior.
+* **Database:** MySQL (used for population data and regional classifications).
 
-### Key Features:
-* **Multi-stage Wizard:** A 5-page form process using PHP Sessions to maintain state.
-* **Complex Business Logic:** The `proccess.php` script implements sophisticated scoring algorithms based on:
-    * Education and social criteria (e.g., unemployment months, agricultural degree).
-    * Geographical location (Mountainous/Insular areas).
-    * Economic Size (Standard Output calculation).
-    * Sector-specific bonuses (e.g., livestock, organic farming).
-* **Dynamic Database Integration:** Uses MySQL to fetch population data and regional classifications for location-based scoring.
-* **Input Validation:** Server-side checks for data integrity (e.g., `ctype_digit` for numerical inputs).
+## 🧩 Features & Logic
+* **Dynamic Location Mapping:** Uses JavaScript to dynamically filter Municipalities and Communities based on the selected Region (implemented in `page_2.php`).
+* **Complex Business Logic:** The `proccess.php` engine calculates scores based on:
+    * **Standard Output (SO):** Economic size calculation of the holding.
+    * **Geographical Criteria:** Automated detection of mountainous or insular status.
+    * **Sector-Specific Rules:** Bonuses for livestock, organic farming, or specific crop types.
+* **Input Validation:** Client-side and server-side checks to ensure data integrity.
 
 ## 📂 Project Structure
-- `page_1.php` to `page_5.php`: User interface and data collection stages.
-- `proccess.php`: The main calculation engine that processes session data and generates scores.
-- `connect_db.php`: Database connection configuration.
-- `scripts/`: Client-side logic for dynamic form elements (e.g., `fun_katoikia.js`).
+- `page_1.php` to `page_5.php`: The 5-stage application wizard.
+- `proccess.php`: The core calculation engine.
+- `fun_katoikia.js`: JavaScript logic for dynamic location selection.
+- `connect_db.php`: Database connection (credentials omitted).
