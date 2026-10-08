@@ -26,7 +26,7 @@ This tool automates the complex scoring logic of the Greek Rural Development Pro
 - `page_1.php` to `page_5.php`: The 5-stage application wizard.
 - `proccess.php`: The core calculation engine.
 
-- <table>
+<table>
   <tr>
     <td><img src="images/page_1.png" width="400"></td>
     <td><img src="images/page_2.png" width="400"></td>
